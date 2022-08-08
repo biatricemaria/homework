@@ -1,0 +1,98 @@
+body{
+  background-color: #333;
+  color: white;
+}
+
+/* COMPONENT STYLES */
+
+.menu-rotator {
+  width: 40rem;
+  height: 40rem;
+  /* border: 1px solid green; */
+  font-size: 200%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 100%;
+}
+
+.menu-rotator a {
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid darkgreen; */
+  text-align: center;
+  line-height: 10rem; 
+  width: 10rem;
+
+
+  background-color: #555;
+  border-radius: 100%; 
+
+  transition: .3s;
+}
+
+.menu-rotator a:hover {
+  background-color: #888;
+}
+
+.menu-rotator i {
+  font-size: 3rem;
+}
+
+.menu-rotator a:first-child {
+  grid-row-start: 1; 
+  grid-column: span 2/4; 
+  justify-self: center;
+  
+}
+
+.menu-rotator a:nth-child(2) {
+  grid-row: span 2/4;
+  grid-column-start: 4;
+  align-self: center;
+}
+
+.menu-rotator a:nth-child(3) {
+  grid-row-start: 4;
+  grid-column: span 2/4 ;
+  justify-self: center;
+}
+  
+
+
+.menu-rotator a:nth-child(4) {
+  grid-row: span 2/4;
+  grid-column-start: 1;
+  align-self: center;
+}
+
+.menu-rotator div:last-child {
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+.menu-rotator div {
+  background-color: #222;
+  text-align: center;
+  border-radius: 100%;
+
+  transform: rotate(0deg);
+  transition: .5s;
+}
+
+#opt-1:target .menu-rotator div.indicator {
+  transform: rotate(0deg);
+}
+
+#opt-2:target .menu-rotator div.indicator {
+  transform: rotate(90deg);
+}
+
+#opt-3:target .menu-rotator div.indicator {
+  transform: rotate(180deg);
+}
+
+#opt-4:target .menu-rotator div.indicator {
+  transform: rotate(270deg);
+}
+
+/* restructure the grid container and items so <a> become 2 times smaller than the indicator */
