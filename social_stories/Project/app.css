@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #345;
+  margin: 0;
+  color: white;
+  height: 100%;
+}
+
+/* STORIES COMPONENT STYLES*/
+
+.stories {
+  /* border: 1px dotted white; */
+  height: 33.3%;
+
+  white-space: nowrap;
+  font-family: Arial;
+  overflow-x: scroll;
+}
+
+.stories .slide {
+  width: 24%;
+  height: 100%;
+  margin-right: 1%;
+
+  background-color: white;
+
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  text-align: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stories .slide:nth-child(1) {
+  background-image: url(avatars/avatar_1.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: center top;
+}
+
+.stories .slide:nth-child(2) {
+  background-image: url(images/1.jpeg);
+}
+
+.stories .slide:nth-child(3) {
+  background-image: url(images/2.jpeg);
+}
+
+.stories .slide:nth-child(4) {
+  background-image: url(images/3.jpeg);
+}
+
+.stories .slide:nth-child(5) {
+  background-image: url(images/4.jpeg);
+}
+
+.stories .slide .avatar {
+  display: inline-block;
+  width: 70%;
+  border: 5px solid rgb(9, 9, 66);
+  height: 35%;
+  border-radius: 100%;
+
+  overflow: hidden;
+  box-shadow: 0 0 5px 3px #234;
+}
+
+.stories .slide img {
+  width: 112%;
+  margin-left: -6%;
+  margin-top: -17%;
+}
+
+.stories .label {
+  background-color: #1137;
+  color: white;
+  padding: 1em;
+  margin-top: 90%;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+}
+
+.stories .slide .button {
+  color: white;
+  text-align: center;
+  background-color: rgb(38, 175, 233);
+  border: 3px solid white;
+  border-radius: 100%;
+  margin-top: 90%;
+  line-height: 15%;
+  height: 15%;
+  width: 30%;
+  font-size: 30px;
+  box-shadow: 0 0 5px 5px #1137;
+}
+
+.stories .label1 {
+  color: black;
+  font-size: 1.3rem;
+  margin-top: 15%;
+}
